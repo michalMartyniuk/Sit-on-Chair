@@ -1,61 +1,218 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="bundle/css/styles.css">
   <title>Sit on Chair</title>
 </head>
+
 <body>
+
   <header>
-    <div class="l-container">
-        <nav class="l-navigation">
-          <span class="c-logo c-logo--type-navigation">
-              sit <span class="c-text--color-green-blue">on</span> chair
-          </span>
-          </div>
-          <ul class="l-list l-list--type-navigation">
-            <li class="l-list__item l-list__item--type-navigation">
-              <a class="l-link l-link--navigation" href="">Dropdown</a>
-            </li>
-            <li class="l-list__item l-list__item--type-navigation">
-              <a href="" class="c-link c-link--navigation">galeria</a>
-            </li>
-            <li class="l-list__item l-list__item--type-navigation">
-              <a href="" class="c-link c-link--navigation">kontakt</a>
-            </li>
-          </ul>
-        </nav>
+
+    <div class="container">
+
+      <nav class="navigation">
+
+        <span class="navigation__logo">
+          SIT <span class="u-greenBlue">ON</span> CHAIR
+        </span>
+
+        <ul class="navigation__list">
+
+          <li class="navigation__item">
+            <a class="navigation__link" href="">O FIRMIE</a>
+          </li>
+
+          <li class="navigation__item">
+            <a href="" class="navigation__link">GALERIA</a>
+          </li>
+
+          <li class="navigation__item">
+            <a href="" class="navigation__link">KONTAKT</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
     </div>
+
   </header>
-  <section class="c-carousel">
-    <div class="l-container">
-      <ul class="l-list">
-        <li class="l-list__item l-list__item--type-carousel">
-            <h1 class="c-heading c-heading--xl">
-              sit <span class="c-text--color-green-blue">on</span>
-              our <span class="c-text--color-green-blue">chair</span>
+
+  <section class="carousel">
+
+    <div class="container">
+
+      <ul class="carousel__list">
+
+        <li class="carousel__item">
+
+          <div class="carousel__textbox">
+            <h1 class="carousel__heading">
+              SIT <span class="u-greenBlue">ON</span>
+              OUR <span class="u-greenBlue">CHAIR</span>
             </h1>
-            <p class="c-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore alias odit, laboriosam eaque, praesentium nostrum repellat illo eligendi sit molestias harum dicta. Ullam, nisi tempore. Non officia quod impedit.</p>
+
+            <p class="carousel__text">
+              Lorem ipsum dolor sit amet enim.
+              Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.
+              Maecenas malesuada elit lectus felis, malesuada ultricies.
+              Curabitur et ligula. Ut molestie a, ultricies porta urna.
+            </p>
+
+            <button class="button carousel__button">ZOBACZ WIĘCEJ</button>
+
+          </div>
+
         </li>
+
       </ul>
+
     </div>
+
   </section>
-  <section class="c-section c-section--second">
-    <div class="l-container">
-      <div class="c-box c-box--first">
-        <img src="images/box1_img.jpg" alt="" class="c-image">
+
+  <section class="img-section">
+
+    <div class="container">
+
+      <div class="img-section__box img-section__box--first">
+        <img src="images/box1_img.jpg" alt="" class="imgSection__image img-section__image--first">
       </div>
-      <div class="c-box c-box--second">
-          <img src="images/box2_img.jpg" alt="" class="c-image">
+
+      <div class="img-section__box img-section__box--second">
+        <img src="images/box2_img.jpg" alt="" class="img-section__image img-section__image--second">
       </div>
-      <div class="c-box c-box--third">
-        <h4 class="c-heading c-heading--sm">Finds all inputs</h4>
-        <p class="c-text"></p>
+
+      <div class="img-section__box img-section__box--third">
+        <h4 class="img-section__heading">Finds all inputs</h4>
+
+        <p class="img-section__text">
+          Finds all inputs that are not checked and highlights the next sibling span.
+          Notice there is no change when clicking the checkboxes since no click events
+          have been linked.
+        </p>
+        <p class="img-section__text">
+          Notice there is no change when clicking the checkboxes since no click events
+          have been
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="price-list">
+
+    <div class="container container--price-list">
+
+      <h2 class="secondary-heading price-list__heading">CENNIK</h2>
+
+      <div class="container container--price-plan">
+
+        <div class="price-plan">
+
+          <h2 class="price-plan__title u-greenBlue">BASIC PLAN</h2>
+
+          <div class="price-plan__price">
+            <div class="price-plan__value">85</div>
+            <div class="price-plan__currency">PLN/MSC</div>
+          </div>
+
+          <div class="price-plan__features">
+            <div class="price-plan__feature">Zakup towaru + dowóz</div>
+            <div class="price-plan__feature">Serwis</div>
+          </div>
+
+          <button class="button price-plan__button">DOŁĄCZ</button>
+
+        </div>
+
+        <div class="price-plan price-plan--middle">
+
+          <h2 class="price-plan__title u-greenBlue">STANDARD PLAN</h2>
+
+          <div class="price-plan__price">
+            <div class="price-plan__value">95</div>
+            <div class="price-plan__currency">PLN/MSC</div>
+          </div>
+
+          <div class="price-plan__features">
+            <div class="price-plan__feature">Zakup towaru + dowóz</div>
+            <div class="price-plan__feature">Serwis</div>
+            <div class="price-plan__feature">Gwarancja 5 lat</div>
+          </div>
+
+          <button class="button price-plan__button">DOŁĄCZ</button>
+
+        </div>
+
+        <div class="price-plan">
+
+          <h2 class="price-plan__title u-greenBlue">ADVANCED PLAN</h2>
+
+          <div class="price-plan__price">
+            <div class="price-plan__value">211</div>
+            <div class="price-plan__currency">PLN/MSC</div>
+          </div>
+
+          <div class="price-plan__features">
+            <div class="price-plan__feature">Zakup towaru + dowóz</div>
+            <div class="price-plan__feature">Serwis</div>
+            <div class="price-plan__feature">Gwarancja 6 lat</div>
+            <div class="price-plan__feature">Porady projektanta</div>
+          </div>
+
+          <button class="button price-plan__button">DOŁĄCZ</button>
+
+        </div>
       </div>
     </div>
+
   </section>
+
+  <section class="contact">
+
+    <div class="container container--contact">
+
+      <h2 class="secondary-heading contact__heading">KONTAKT</h2>
+
+      <form class="contact-form">
+
+        <div class="contact-form__input-wrapper">
+
+          <label for="name" class="contact-form__label-name">
+            <input type="text" class="contact-form__input-name" name="name" placeholder="Imię">
+          </label>
+
+          <label for="email" class="contact-form__label-email">
+            <input type="text" class="contact-form__input-email" name="email" placeholder="email">
+          </label>
+
+          <label for="" class="contact-form__label-message">
+            <textarea name="message" id="" cols="30" rows="10" class="contact-form__textarea-message" placeholder="Wiadomość"></textarea>
+          </label>
+
+        </div>
+
+        <div class="contact-form__submit-box">
+
+          <input type="checkbox" class="contact-form__checkbox">
+          <button class="button contact-form__submit-button">WYŚLIJ</button>
+
+        </div>
+
+      </form>
+
+    </div>
+
+  </section>
+
 </body>
+
 </html>

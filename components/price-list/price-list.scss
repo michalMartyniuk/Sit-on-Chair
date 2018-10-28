@@ -1,0 +1,106 @@
+.price-list {
+  background-color: $price-list-bck;
+
+  .container--price-list {
+    flex-direction: column;
+  }
+
+  &__heading {
+  }
+}
+
+.container--price-plan {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.price-plan {
+  &:nth-of-type(1),
+  &:nth-of-type(3) {
+    @include price-plan-top-circle();
+  }
+  &:nth-of-type(2) {
+    @include price-plan-top-circle(true);
+  }
+  background-color: $price-plan-bck;
+  display: flex;
+  flex-basis: 31.5%;
+  flex-direction: column;
+  border: 2px solid $price-plan-border-color;
+  height: 505px;
+  margin: 4rem 0;
+
+  &__title {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 1.7rem auto;
+    margin-bottom: 1.6rem;
+  }
+  &__price {
+    display: flex;
+    flex-direction: column;
+    width: $price-wrapper-width;
+    height: $price-wrapper-width;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 2px solid $price-plan-border-color;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+  &__value {
+  }
+  &__currency {
+  }
+  &__features {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  &__feature {
+    font-size: 1.7rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.4rem 0;
+    &:nth-of-type(2n + 1) {
+      background-color: $price-plan-feature-bck-odd;
+      color: $price-plan-feature-text-odd;
+    }
+    &:nth-of-type(2n + 2) {
+      background-color: $price-plan-feature-bck-even;
+      color: $price-plan-feature-text-even;
+    }
+  }
+  &__button {
+    font-size: 1rem;
+    margin-top: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  &.price-plan--middle {
+    background-color: $green-blue;
+    border-color: $green-blue;
+
+    .price-plan__title {
+      color: white;
+    }
+
+    .price-plan__feature {
+      &:nth-of-type(2n + 1) {
+        background-color: #fff;
+        color: $price-plan-feature-text-odd;
+      }
+      &:nth-of-type(2n + 2) {
+        color: $price-plan-feature-text-odd;
+      }
+    }
+    .price-plan__price {
+      border-color: $green-blue;
+    }
+    .price-plan__price,
+    .price-plan__button {
+      color: $green-blue;
+      background-color: white;
+    }
+  }
+}

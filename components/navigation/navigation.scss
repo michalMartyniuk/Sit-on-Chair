@@ -1,0 +1,26 @@
+.navigation {
+  color: white;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  height: 40px;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+
+  &__logo {
+    flex: 1;
+  }
+  &__list {
+    flex: 0.5;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+  }
+  &__link {
+    color: white;
+    text-decoration: none;
+  }
+}

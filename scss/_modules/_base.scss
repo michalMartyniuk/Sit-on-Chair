@@ -1,0 +1,60 @@
+$line-height: 1.6rem;
+$price-wrapper-width: 120px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #000000;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1080px;
+  margin: auto;
+}
+
+.secondary-heading {
+  font-weight: 400;
+  color: $secondary-heading-color;
+  margin-top: 3rem;
+  @include heading-underline(325px, 0.4rem);
+}
+
+.button {
+  color: white;
+  border: none;
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 2% 8%;
+  padding-top: 2.5%;
+  border-radius: 0.4rem;
+  background-color: $green-blue;
+}
+
+.u-greenBlue {
+  color: $green-blue;
+}

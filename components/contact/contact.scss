@@ -1,0 +1,42 @@
+.container--contact {
+}
+
+.contact {
+  &__heading {
+  }
+
+  &-form {
+    &__label {
+      &-name {
+        color: black;
+      }
+      &-email {
+        color: black;
+      }
+      &-message {
+        color: black;
+      }
+    }
+    // &__input-wrapper {
+    //   color: black;
+    // }
+    // &__label-name {
+    //   color: black;
+    // }
+    // &__input-name {
+    //   color: black;
+    // }
+    // &__label-email {
+    //   color: black;
+    // }
+    // &__input-email {
+    //   color: black;
+    // }
+    // &__label-message {
+    //   color: black;
+    // }
+    // &__textarea-message {
+    //   color: black;
+    // }
+  }
+}

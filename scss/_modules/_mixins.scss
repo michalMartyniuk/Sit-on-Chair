@@ -1,0 +1,44 @@
+@mixin heading-underline($length: 150px, $margin-top: 0) {
+  &::after {
+    content: "";
+    display: block;
+    height: 7px;
+    background-color: $green-blue;
+    width: $length;
+    margin-top: $margin-top;
+  }
+}
+
+@mixin price-plan-top-circle($middle: false) {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border: 2px solid $price-plan-border-color;
+    border-radius: 100px;
+    top: -7%;
+    left: 42.5%;
+    @if $middle {
+      border-color: $green-blue;
+      background-color: $green-blue;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: $price-plan-top-circle-inner-bck;
+    border-radius: 100px;
+    width: 26px;
+    height: 26px;
+    top: -4.28%;
+    left: 46.61%;
+    @if $middle {
+      background-color: #fff;
+    }
+  }
+}
