@@ -1,12 +1,48 @@
-@mixin heading-underline($length: 150px, $margin-top: 0) {
+@mixin heading-underline(
+  $length: 150px,
+  $margin-top: 0,
+  $position: static,
+  $top: 0%,
+  $left: 0%
+) {
   &::after {
     content: "";
     display: block;
-    height: 7px;
+    height: 8px;
     background-color: $green-blue;
     width: $length;
     margin-top: $margin-top;
+    position: $position;
+    top: $top;
+    left: $left;
+    @content;
   }
+}
+
+@mixin heading($text, $position: static, $top: 0%, $left: 0%) {
+  &::before {
+    content: "#{$text}";
+    position: $position;
+    top: $top;
+    left: $left;
+    @content;
+  }
+}
+
+@mixin underlined-heading-combo($text) {
+  @include heading($text: $text, $position: absolute, $top: 17%, $left: 6%) {
+    font-weight: 600;
+  }
+  @include heading-underline($position: absolute, $top: 50%, $left: 5%);
+}
+
+@mixin image-description-component($text) {
+  position: absolute;
+  width: 100%;
+  background-color: #ffffff69;
+  height: 60px;
+  top: 58%;
+  @include underlined-heading-combo($text);
 }
 
 @mixin price-plan-top-circle($middle: false) {

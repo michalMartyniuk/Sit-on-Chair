@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="bundle/css/styles.css">
   <title>Sit on Chair</title>
 </head>
@@ -18,13 +19,21 @@
       <nav class="navigation">
 
         <span class="navigation__logo">
-          SIT <span class="u-greenBlue">ON</span> CHAIR
+          SIT <span>ON</span> CHAIR
         </span>
 
         <ul class="navigation__list">
 
           <li class="navigation__item">
-            <a class="navigation__link" href="">O FIRMIE</a>
+            <a class="navigation__link dropdown" href="">O FIRMIE
+              <ul class="dropdown__list">
+                <div class="dropdown__items-wrapper">
+                  <li class="dropdown__item">Aktualności</li>
+                  <li class="dropdown__item">Nasz team</li>
+                  <li class="dropdown__item">Historia</li>
+                </div>
+              </ul>
+            </a>
           </li>
 
           <li class="navigation__item">
@@ -51,10 +60,13 @@
 
         <li class="carousel__item">
 
+          <div class="carousel__left-arrow"></div>
+
           <div class="carousel__textbox">
+
             <h1 class="carousel__heading">
-              SIT <span class="u-greenBlue">ON</span>
-              OUR <span class="u-greenBlue">CHAIR</span>
+              SIT <span>ON</span>
+              OUR <span>CHAIR</span>
             </h1>
 
             <p class="carousel__text">
@@ -67,6 +79,8 @@
             <button class="button carousel__button">ZOBACZ WIĘCEJ</button>
 
           </div>
+
+          <div class="carousel__right-arrow"></div>
 
         </li>
 
@@ -81,10 +95,12 @@
     <div class="container">
 
       <div class="img-section__box img-section__box--first">
-        <img src="images/box1_img.jpg" alt="" class="imgSection__image img-section__image--first">
+        <div class="img-section__description"></div>
+        <img src="images/box1_img.jpg" alt="" class="img-section__image img-section__image--first">
       </div>
 
       <div class="img-section__box img-section__box--second">
+        <div class="img-section__description"></div>
         <img src="images/box2_img.jpg" alt="" class="img-section__image img-section__image--second">
       </div>
 
@@ -119,8 +135,8 @@
 
           <h2 class="price-plan__title u-greenBlue">BASIC PLAN</h2>
 
-          <div class="price-plan__price">
-            <div class="price-plan__value">85</div>
+          <div class="price-plan__price price-plan__price--first">
+            <div class="price-plan__value"><span>8</span>5<sup>99</sup></div>
             <div class="price-plan__currency">PLN/MSC</div>
           </div>
 
@@ -137,8 +153,8 @@
 
           <h2 class="price-plan__title u-greenBlue">STANDARD PLAN</h2>
 
-          <div class="price-plan__price">
-            <div class="price-plan__value">95</div>
+          <div class="price-plan__price price-plan__price--second">
+            <div class="price-plan__value">95<sup>99</sup></div>
             <div class="price-plan__currency">PLN/MSC</div>
           </div>
 
@@ -156,8 +172,8 @@
 
           <h2 class="price-plan__title u-greenBlue">ADVANCED PLAN</h2>
 
-          <div class="price-plan__price">
-            <div class="price-plan__value">211</div>
+          <div class="price-plan__price price-plan__price--third">
+            <div class="price-plan__value">211<sup>00</sup></div>
             <div class="price-plan__currency">PLN/MSC</div>
           </div>
 
@@ -228,6 +244,28 @@
     </div>
 
   </section>
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__copyright">
+        <p>Copyright 2014 | All Rights Reserved - Sit On Chair</p>
+      </div>
+
+      <div class="footer__links">
+        <img class="footer__link" src="images/flickr.png" alt="flickr logo">
+        <img class="footer__link" src="images/vimeo.png" alt=" vimeo logo">
+        <img class="footer__link" src="images/pinterest.png" alt="pinterest logo">
+        <img class="footer__link" src="images/twitter.png" alt="twitter logo">
+      </div>
+
+      <div class="footer__logo">
+        <p>SIT <span>ON</span> CHAIR</p>
+      </div>
+
+    </div>
+
+  </footer>
 
 </body>
 

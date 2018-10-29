@@ -6,21 +6,64 @@
   height: 40px;
   align-items: center;
   font-size: 1rem;
-  font-weight: bold;
 
   &__logo {
     flex: 1;
+    span {
+      color: $green-blue;
+      font-weight: 900;
+    }
   }
   &__list {
+    font-weight: bold;
     flex: 0.5;
     list-style: none;
     display: flex;
-    justify-content: space-between;
   }
   &__item {
+    margin-left: auto;
   }
   &__link {
     color: white;
     text-decoration: none;
+  }
+}
+
+.dropdown {
+  position: relative;
+
+  &:hover &__list {
+    display: block;
+  }
+
+  &__list {
+    display: none;
+    &::before {
+      content: "";
+      display: block;
+      width: 0px;
+      margin: auto;
+      border-bottom: 10px solid black;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+    }
+    padding-top: 0.9rem;
+    position: absolute;
+    background: transparent;
+    left: -15px;
+  }
+
+  &__items-wrapper {
+    padding: 0.5rem 0.8rem;
+    background-color: #000;
+  }
+
+  &__item {
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+    &:nth-last-of-type(1) {
+      padding: 0;
+    }
   }
 }

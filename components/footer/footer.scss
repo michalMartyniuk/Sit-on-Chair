@@ -1,0 +1,28 @@
+.footer {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  align-items: center;
+
+  &__copyright {
+    display: flex;
+    color: $footer-text-color;
+    align-items: center;
+    flex: 2;
+    font-size: 1.1rem;
+  }
+  &__links {
+    flex: 0.64;
+  }
+  &__link {
+  }
+  &__logo {
+    display: flex;
+    font-size: 1.35rem;
+    color: $footer-text-color;
+    align-items: center;
+    word-spacing: 0.35rem;
+    span {
+      font-weight: 900;
+    }
+  }
+}

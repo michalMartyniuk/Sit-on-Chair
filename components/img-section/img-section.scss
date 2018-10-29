@@ -1,5 +1,6 @@
 .img-section {
   margin: 1.8rem 0;
+  margin-bottom: 4.8rem;
 
   .container {
     justify-content: space-between;
@@ -8,10 +9,21 @@
   &__box {
     margin: 0 0.85rem;
     flex: 1;
+
     &--first {
+      position: relative;
+
+      .img-section__description {
+        @include image-description-component(Chair CLAIR);
+      }
+
       margin-left: 0;
     }
     &--second {
+      position: relative;
+      .img-section__description {
+        @include image-description-component(Chair MARGARITA);
+      }
     }
     &--third {
       border: 1px solid $img-section-border-color;
@@ -19,16 +31,10 @@
       margin-right: 0;
     }
   }
-  &__image {
-    &--first {
-    }
-    &--second {
-    }
-    &--third {
-    }
-  }
+
   &__heading {
     font-size: 1.2rem;
+    font-weight: 600;
     margin-bottom: 0.9rem;
     @include heading-underline();
   }

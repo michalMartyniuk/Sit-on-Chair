@@ -7,6 +7,14 @@ $price-wrapper-width: 120px;
   box-sizing: border-box;
 }
 
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
 h1,
 h2,
 h3,
@@ -39,8 +47,8 @@ header {
 .secondary-heading {
   font-weight: 400;
   color: $secondary-heading-color;
-  margin-top: 3rem;
-  @include heading-underline(325px, 0.4rem);
+  margin-top: 2rem;
+  @include heading-underline(325px, 0.5rem);
 }
 
 .button {
@@ -49,8 +57,8 @@ header {
   display: block;
   margin: auto;
   margin-top: 1rem;
-  padding: 2% 8%;
-  padding-top: 2.5%;
+  padding: 2.5% 8%;
+  padding-top: 3.5%;
   border-radius: 0.4rem;
   background-color: $green-blue;
 }

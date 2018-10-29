@@ -22,12 +22,20 @@
     &__input {
       &::placeholder {
         color: $contact-form-text-color;
-        font-size: 2rem;
+        font: {
+          size: 2rem;
+          family: "Lato", sans-serif;
+          weight: 300;
+        }
       }
       width: 100%;
-      font-size: 1.5rem;
-      padding: 1rem;
-      border: 1px solid $green-blue;
+      font-size: 1.3rem;
+      padding: 1.2rem;
+      border: 1px solid $contact-form-border-color;
+    }
+
+    textarea.contact-form__input {
+      resize: none;
     }
 
     .submit-box {
@@ -35,6 +43,7 @@
       display: flex;
       flex-direction: column;
       margin-left: 4rem;
+      margin-right: 2rem;
 
       &__image {
         margin-left: 1rem;
@@ -56,28 +65,28 @@
         &__content {
           flex: 0 0 50px;
           position: relative;
-          border: 1px solid $green-blue;
+          border: 1px solid $contact-form-border-color;
           margin-right: 1rem;
+          // padding: 0.2rem;
           &::before {
-            content: "\2714";
-            color: $green-blue;
+            content: url(../../images/form_ok.jpg);
             position: absolute;
-            font-size: 3.7rem;
-            top: -23%;
-            left: 2%;
+            top: 3%;
           }
         }
 
         &__text {
           color: $contact-form-text-color;
           font-size: 1.3rem;
+          font-weight: 300;
           margin: auto;
         }
       }
       &__button {
         width: 100%;
-        font-size: 2.5rem;
-        padding: 0.8rem 0;
+        font-size: 2.2rem;
+        font-weight: 700;
+        padding: 1rem 0;
         margin: 0.8rem 0;
         margin-top: auto;
       }
