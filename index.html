@@ -186,24 +186,40 @@
 
         <div class="contact-form__input-wrapper">
 
-          <label for="name" class="contact-form__label-name">
-            <input type="text" class="contact-form__input-name" name="name" placeholder="Imię">
+          <label for="name" class="contact-form__label">
+            <input type="text" class="contact-form__input" name="name" placeholder="Imię">
           </label>
 
-          <label for="email" class="contact-form__label-email">
-            <input type="text" class="contact-form__input-email" name="email" placeholder="email">
+          <label for="email" class="contact-form__label">
+            <input type="text" class="contact-form__input" name="email" placeholder="email">
           </label>
 
-          <label for="" class="contact-form__label-message">
-            <textarea name="message" id="" cols="30" rows="10" class="contact-form__textarea-message" placeholder="Wiadomość"></textarea>
+          <label for="" class="contact-form__label">
+            <textarea name="message" id="" cols="30" rows="7" class="contact-form__input" placeholder="Wiadomość"></textarea>
           </label>
 
         </div>
 
-        <div class="contact-form__submit-box">
+        <div class="submit-box contact-form__submit-box">
 
-          <input type="checkbox" class="contact-form__checkbox">
-          <button class="button contact-form__submit-button">WYŚLIJ</button>
+          <img src="images/red_chair.png" alt="" class="submit-box__image">
+
+          <div class="checkbox">
+
+            <input type="checkbox" id="checkbox" class="checkbox__input">
+
+            <label for="checkbox" class="checkbox__label">
+
+              <span class="checkbox__content"></span>
+
+              <span class="checkbox__text">
+                Zgadzam się na przetwarzanie danych osobowych
+              </span>
+
+            </label>
+
+          </div>
+          <button class="button submit-box__button">WYŚLIJ</button>
 
         </div>
 
