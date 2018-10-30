@@ -1,0 +1,12 @@
+// Modules
+@import "_modules/mixins";
+@import "_modules/colors";
+@import "_modules/base";
+
+//Components
+@import "../src/navigation/navigation.scss";
+@import "../src/carousel/carousel.scss";
+@import "../src/img-section/img-section.scss";
+@import "../src/price-list/price-list.scss";
+@import "../src/contact/contact.scss";
+@import "../src/footer/footer.scss";
