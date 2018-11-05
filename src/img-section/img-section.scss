@@ -10,6 +10,9 @@
     margin: 0 0.85rem;
     flex: 1;
 
+    .img-section__description:hover {
+      opacity: 0;
+    }
     &--first {
       position: relative;
 

@@ -224,6 +224,8 @@ header {
   .img-section__box {
     margin: 0 0.85rem;
     flex: 1; }
+    .img-section__box .img-section__description:hover {
+      opacity: 0; }
     .img-section__box--first {
       position: relative;
       margin-left: 0; }
