@@ -2,5 +2,5 @@
 ### Fictional chair selling website
 #### Technologies used:
 - HTML
-- CSS
+- CSS(SCSS)
 - Javascript
